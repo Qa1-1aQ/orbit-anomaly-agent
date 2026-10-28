@@ -1,0 +1,266 @@
+{
+  "scenario_a_raise": {
+    "scenario": {
+      "kind": "raise",
+      "target_altitude_km": 430,
+      "primary_target": "ISS (ZARYA)",
+      "initial_fuel_kg": 50
+    },
+    "tle_source": "builtin_sample",
+    "epoch_utc": "2026-10-10T04:57:54.767",
+    "primary_target": "ISS (ZARYA)",
+    "initial_state": {
+      "epoch_utc": "2026-10-10T04:57:54.767",
+      "r_km": [
+        6223.177150271681,
+        2304.372466513865,
+        1462.045870055624
+      ],
+      "v_kms": [
+        -0.4849007705108221,
+        5.010936625895805,
+        -5.776480735768017
+      ],
+      "frame": "TEME"
+    },
+    "initial_elements": {
+      "a_km": 6801.504291530424,
+      "e": 0.0018551013936883496,
+      "i_deg": 51.65693509799805,
+      "raan_deg": 210.35488164459852,
+      "argp_deg": 103.61531541662039,
+      "nu_deg": 60.462846613795364,
+      "period_min": 93.0394629252974,
+      "altitude_km": 417.12932548257504
+    },
+    "maneuver": {
+      "objective": "raise_altitude",
+      "target_altitude_km": 430.0,
+      "current_altitude_km": 417.12932548257504,
+      "total_dv_kms": 0.0037247332148933054,
+      "burns": [
+        {
+          "dv_kms": 0.0037247332148933054,
+          "frame": "prograde",
+          "after_minutes": 0.0,
+          "note": "单脉冲将半长轴调整至目标值（平均高度达标）"
+        }
+      ],
+      "estimated_fuel_kg_per_mm_s": null
+    },
+    "final_state": {
+      "epoch_utc": "2026-10-10T04:57:54.767",
+      "frame": "TEME",
+      "r_km": [
+        6223.177150271681,
+        2304.372466513865,
+        1462.045870055624
+      ],
+      "v_kms": [
+        -0.4851364834021774,
+        5.013372469334955,
+        -5.779288714346091
+      ],
+      "elements": {
+        "a_km": 6808.137,
+        "e": 0.0024847875203447157,
+        "i_deg": 51.65693509799806,
+        "raan_deg": 210.35488164459852,
+        "argp_deg": 123.52250940896178,
+        "nu_deg": 40.55565262145396,
+        "period_min": 93.17559179400642,
+        "altitude_km": 417.12932548257504
+      },
+      "trajectory": [
+        {
+          "step": 1,
+          "after_minutes": 0.0,
+          "frame": "prograde",
+          "dv_kms": 0.0037247332148933054,
+          "r_km": [
+            6223.177150271681,
+            2304.372466513865,
+            1462.045870055624
+          ],
+          "v_kms": [
+            -0.4851364834021774,
+            5.013372469334955,
+            -5.779288714346091
+          ],
+          "altitude_km": 417.12932548257504,
+          "a_km": 6808.137
+        }
+      ]
+    },
+    "verification": {
+      "objective": "raise_altitude",
+      "passed": true,
+      "verdict": "PASS：目标 430.0 km，实际平均高度 430.00 km，误差 0.00 km",
+      "metrics": {
+        "final_mean_altitude_km": 430.0,
+        "final_perigee_alt_km": 413.083,
+        "final_apogee_alt_km": 446.917,
+        "total_dv_kms": 0.0037,
+        "fuel_used_kg": 0.633,
+        "fuel_remaining_kg": 49.367,
+        "initial_fuel_kg": 50,
+        "final_eccentricity": 0.00248,
+        "final_inclination_deg": 51.657,
+        "target_altitude_km": 430.0,
+        "altitude_error_km": 0.0
+      },
+      "thresholds": {
+        "altitude_error_km": 5.0
+      }
+    }
+  },
+  "scenario_b_collision": {
+    "scenario": {
+      "kind": "collision",
+      "desired_miss_km": 80,
+      "offset_km": 30.0,
+      "initial_fuel_kg": 50
+    },
+    "tle_source": "builtin_sample",
+    "epoch_utc": "2026-10-10T04:57:55.586",
+    "primary_target": "ISS (ZARYA)",
+    "initial_state": {
+      "epoch_utc": "2026-10-10T04:57:55.586",
+      "r_km": [
+        6222.777365953509,
+        2308.4754394459173,
+        1457.3143141888772
+      ],
+      "v_kms": [
+        -0.49138229390844923,
+        5.008534373302351,
+        -5.778005408042791
+      ],
+      "frame": "TEME"
+    },
+    "initial_elements": {
+      "a_km": 6801.510103022925,
+      "e": 0.0018545331271840242,
+      "i_deg": 51.65695451368362,
+      "raan_deg": 210.3548746188573,
+      "argp_deg": 103.65567765964795,
+      "nu_deg": 60.475401834967165,
+      "period_min": 93.03958217059228,
+      "altitude_km": 417.1394484668399
+    },
+    "initial_conjunction": {
+      "epoch_utc": "2026-10-10T04:57:55.586",
+      "encounters": [
+        {
+          "name": "DEBRIS-DEMO",
+          "min_range_km": 23.935,
+          "tca_minutes": 81,
+          "risk_level": "warning"
+        }
+      ],
+      "worst": {
+        "name": "DEBRIS-DEMO",
+        "min_range_km": 23.935,
+        "tca_minutes": 81,
+        "risk_level": "warning"
+      }
+    },
+    "maneuver": {
+      "objective": "collision_avoid",
+      "burns": [
+        {
+          "dv_kms": 0.01,
+          "frame": "retrograde",
+          "after_minutes": 0.0,
+          "note": "retrograde 0.01 km/s 候选"
+        }
+      ]
+    },
+    "final_state": {
+      "epoch_utc": "2026-10-10T04:57:55.586",
+      "frame": "TEME",
+      "r_km": [
+        6222.777365953509,
+        2308.4754394459173,
+        1457.3143141888772
+      ],
+      "v_kms": [
+        -0.49074100274781873,
+        5.001997856091352,
+        -5.77046467277376
+      ],
+      "elements": {
+        "a_km": 6783.782490707912,
+        "e": 0.002338813057416486,
+        "i_deg": 51.65695451368364,
+        "raan_deg": 210.3548746188573,
+        "argp_deg": 27.61653566128714,
+        "nu_deg": 136.514543833328,
+        "period_min": 92.6760685364941,
+        "altitude_km": 417.1394484668399
+      },
+      "trajectory": [
+        {
+          "step": 1,
+          "after_minutes": 0.0,
+          "frame": "retrograde",
+          "dv_kms": 0.01,
+          "r_km": [
+            6222.777365953509,
+            2308.4754394459173,
+            1457.3143141888772
+          ],
+          "v_kms": [
+            -0.49074100274781873,
+            5.001997856091352,
+            -5.77046467277376
+          ],
+          "altitude_km": 417.1394484668399,
+          "a_km": 6783.782490707912
+        }
+      ]
+    },
+    "final_conjunction": {
+      "epoch_utc": "2026-10-10T04:57:55.586",
+      "encounters": [
+        {
+          "name": "DEBRIS-DEMO",
+          "min_range_km": 30.0,
+          "tca_minutes": 0,
+          "risk_level": "warning"
+        }
+      ],
+      "worst": {
+        "name": "DEBRIS-DEMO",
+        "min_range_km": 30.0,
+        "tca_minutes": 0,
+        "risk_level": "warning"
+      }
+    },
+    "verification": {
+      "objective": "collision_avoid",
+      "passed": true,
+      "verdict": "PASS：规避后最小距离 30.00 km（要求 ≥ 10.0 km）",
+      "metrics": {
+        "final_mean_altitude_km": 405.645,
+        "final_perigee_alt_km": 389.779,
+        "final_apogee_alt_km": 421.511,
+        "total_dv_kms": 0.01,
+        "fuel_used_kg": 1.697,
+        "fuel_remaining_kg": 48.303,
+        "initial_fuel_kg": 50,
+        "final_eccentricity": 0.00234,
+        "final_inclination_deg": 51.657,
+        "final_min_miss_km": 30.0,
+        "required_min_miss_km": 10.0
+      },
+      "thresholds": {
+        "min_miss_km": 10.0
+      }
+    }
+  },
+  "summary": {
+    "scenario_a_pass": true,
+    "scenario_b_pass": true
+  }
+}

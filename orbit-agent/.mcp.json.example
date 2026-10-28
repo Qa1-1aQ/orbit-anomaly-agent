@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "orbit-anomaly-agent": {
+      "command": "python",
+      "args": ["-m", "tools.server"],
+      "cwd": "<把这里替换为本项目根目录的绝对路径，例如 /home/you/orbit-agent 或 D:/orbit-agent>",
+      "env": {}
+    }
+  }
+}

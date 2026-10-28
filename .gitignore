@@ -1,0 +1,13 @@
+# AGH 运行时诊断日志（本地运行产物，非项目源码）
+agh-diagnostics-*/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+*.swp
