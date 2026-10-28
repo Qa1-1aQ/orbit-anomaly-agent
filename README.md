@@ -78,7 +78,7 @@ Given a natural-language task, the agent autonomously completes the full anomaly
 
 ## 2. Demo Video
 
-> 🎬 **Demo video:** _to be published_ — **[TODO: insert video link here]** (YouTube / Bilibili / mirror).
+> 🎬 **Demo video:** [Watch on YouTube](https://youtu.be/sEqavI7qDyg?si=9tEulD1rNGr6t5Be) — a single natural-language question triggers the full closed loop.
 
 The demo shows a single natural-language question triggering the full closed loop: tool-chain scrolling, the 55% thruster-fault self-healing segment, the Monte-Carlo result, and the generated orbit figure. See [`orbit-agent/output/运行证据.pdf`](orbit-agent/output) for the captured AGH execution records and tool-call traces.
 

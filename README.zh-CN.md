@@ -78,7 +78,7 @@
 
 ## 2. 视频介绍
 
-> 🎬 **演示视频：** _待发布_ —— **[TODO：在此填入视频链接]**（YouTube / Bilibili / 网盘）。
+> 🎬 **演示视频：** [在 YouTube 观看](https://youtu.be/sEqavI7qDyg?si=9tEulD1rNGr6t5Be)（一个问题触发完整闭环）。
 
 视频展示"一个问题触发完整闭环"：工具调用链滚动、55% 推力故障自愈片段、蒙特卡洛结果、生成的轨道示意图。执行记录与工具调用链截图见 [`orbit-agent/output/运行证据.pdf`](orbit-agent/output)。
 
